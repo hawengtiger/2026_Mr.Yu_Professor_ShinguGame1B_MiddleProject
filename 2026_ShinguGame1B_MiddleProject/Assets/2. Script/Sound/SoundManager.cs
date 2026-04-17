@@ -179,33 +179,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void LoadAudioSettings()
-    {
-        // 음악 볼륨 불러오기
-        if (PlayerPrefs.HasKey("MusicVolume"))
-        {
-            musicSource.volume = PlayerPrefs.GetFloat("MusicVolume");  // 저장된 음악 볼륨 적용
-        }
-
-        // 효과음 볼륨 불러오기
-        if (PlayerPrefs.HasKey("SFXVolume"))
-        {
-            sfxSource.volume = PlayerPrefs.GetFloat("SFXVolume");  // 저장된 효과음 볼륨 적용
-        }
-
-        // 음악 뮤트 상태 불러오기
-        if (PlayerPrefs.HasKey("MusicMute"))
-        {
-            musicSource.mute = PlayerPrefs.GetInt("MusicMute", 1) == 0;
-        }
-
-        // 효과음 뮤트 상태 불러오기
-        if (PlayerPrefs.HasKey("SFXMute"))
-        {
-            sfxSource.mute = PlayerPrefs.GetInt("SFXMute", 1) == 0;
-        }
-    }
-
     /// <summary>
     /// === | 버튼 하이라이트 효과음 | ===
     /// </summary>
