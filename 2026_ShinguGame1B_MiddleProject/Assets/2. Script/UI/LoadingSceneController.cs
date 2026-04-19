@@ -3,10 +3,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// === | 로딩 씬 화면 전환 | ===
+/// </summary>
 public class LoadingSceneController : MonoBehaviour
 {
     static string nextScene;
 
+    [Header("프로그레스 바")]
     [SerializeField]
     Image progressBar;
 
@@ -22,7 +26,7 @@ public class LoadingSceneController : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(LoadSceneProcess());
+        StartCoroutine(LoadSceneProcess());     //로딩 시작
     }
 
     /// <summary>

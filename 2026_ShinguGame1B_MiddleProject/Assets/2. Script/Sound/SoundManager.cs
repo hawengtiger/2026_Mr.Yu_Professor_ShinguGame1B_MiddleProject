@@ -33,10 +33,6 @@ public class SoundManager : MonoBehaviour
     [Header("BGM과 SFX 할당")]
     public AudioSource musicSource, sfxSource;
 
-    /// <summary>
-    /// | Private 변수 | ====================================
-    /// </summary>
-
 
 
 
@@ -61,16 +57,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-/*        string lastMusic = PlayerPrefs.GetString("LastPlayedMusic", "");
-
-        if (!string.IsNullOrEmpty(lastMusic))
-        {
-            PlayMusic(lastMusic);
-        }*/
-    }
-
     /// <summary>
     /// === | 음악 실행 (음악 이름) | ===
     /// </summary>
@@ -80,7 +66,7 @@ public class SoundManager : MonoBehaviour
 
         if (bgmSound  == null)  //bgmSound가 Null이면 반환하는 코드 (Null 버그 방지)
         {
-            Debug.Log($"[SoundManager]에 음악 '{bgmName}' <-- 인스펙터에 없거나 오타 발생.");    // bgmName인스펙터에 없을경우 디버그로 시각화 함.
+            Debug.LogWarning($"[SoundManager]에 음악 '{bgmName}' <-- 인스펙터에 없거나 오타 발생.");    // bgmName인스펙터에 없을경우 디버그로 시각화 함.
             return;
         }
 
@@ -99,7 +85,7 @@ public class SoundManager : MonoBehaviour
 
         if (sfxSound == null) //sfxSound가 Null이면 반환하는 코드 (Null 버그 방지)
         {
-            Debug.Log($"[SoundManager]에 효과음 '{sfxName}' <-- 인스펙터에 없거나 오타 발생.");   // sfxName인스펙터에 없을경우 디버그로 시각화 함.
+            Debug.LogWarning($"[SoundManager]에 효과음 '{sfxName}' <-- 인스펙터에 없거나 오타 발생.");   // sfxName인스펙터에 없을경우 디버그로 시각화 함.
             return;
         }
 
@@ -166,7 +152,7 @@ public class SoundManager : MonoBehaviour
             // 로딩 씬에서는 음악을 멈춘다
             StopMusic();
         }
-        else
+        else        // 로딩 씬이 아닐 경우
         {
             // 로딩 씬이 끝나면, 저장된 'NextBGM'을 재생
             string nextBGM = PlayerPrefs.GetString("NextBGM", "");

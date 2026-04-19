@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 201130152}
   - component: {fileID: 201130151}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: CopyRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Copyright \xA9 2026 SangJin.H  \r\nThis material may only be used for
-    educational purposes. All other rights reserved.\r\n"
+  m_text: "Copyright \xA9 2026 SangJin.H  \r\nThe copyright of this game belongs
+    entirely to the developer.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 551073181}
   - component: {fileID: 551073180}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
