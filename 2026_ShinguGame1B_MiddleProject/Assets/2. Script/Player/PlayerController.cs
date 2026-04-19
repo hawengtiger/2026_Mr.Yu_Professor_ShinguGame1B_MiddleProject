@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public string nextScene;
 
+    public Animator animator;
 
 
     /// <summary>
@@ -36,6 +37,15 @@ public class PlayerController : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        if (rb.linearVelocity.x != 0)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
 
         // 벽 체크 (좌우 Raycast 추천)
         isTouchingWall = Physics2D.Raycast(transform.position, Vector2.right * Mathf.Sign(moveInput), 0.12f, groundLayer);

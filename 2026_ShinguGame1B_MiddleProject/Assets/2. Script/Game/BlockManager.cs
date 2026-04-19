@@ -24,7 +24,7 @@ public class BlockManager : MonoBehaviour
         {
             iswhite = !iswhite;
 
-            animator.Play(iswhite ? "whitewalk" : "blackwalk");
+            animator.SetBool("iswhite", iswhite);
         }
 
         if (!iswhite)

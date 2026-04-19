@@ -6138,8 +6138,6 @@ MonoBehaviour:
   whiteSprite: {fileID: 1387477272968723097, guid: 7e367a640ee9cca44aa687714f5612c8, type: 3}
   blackSprite: {fileID: 4085886100425131648, guid: 1a0e705c63ca23b459dfa6869f0ee0a1, type: 3}
   animator: {fileID: 1098633178}
-  whiteAnim: {fileID: 9100000, guid: b9fe2b9478b0a8341b662c357d65d20c, type: 2}
-  blackAnim: {fileID: 9100000, guid: b9fe2b9478b0a8341b662c357d65d20c, type: 2}
 --- !u!1 &652413264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8479,6 +8477,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   nextScene: Lv2
+  animator: {fileID: 1098633178}
 --- !u!114 &1098633175
 MonoBehaviour:
   m_ObjectHideFlags: 0
