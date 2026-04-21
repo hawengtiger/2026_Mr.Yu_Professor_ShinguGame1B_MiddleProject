@@ -5,10 +5,6 @@ public class BlockManager : MonoBehaviour
     public GameObject white, black;
     public bool iswhite = false;
 
-    public SpriteRenderer playerRenderer;
-    public Sprite whiteSprite;
-    public Sprite blackSprite;
-
     public Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,6 +34,5 @@ public class BlockManager : MonoBehaviour
             white.SetActive(false);
         }
 
-        playerRenderer.sprite = iswhite ? whiteSprite : blackSprite;
     }
 }
