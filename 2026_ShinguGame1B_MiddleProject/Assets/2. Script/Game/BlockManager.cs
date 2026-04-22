@@ -25,7 +25,7 @@ public class BlockManager : MonoBehaviour
             animator.SetBool("iswhite", iswhite);
         }
 
-        if (!iswhite)
+        if (iswhite)
         {
             black.SetActive(false);
             white.SetActive(true);

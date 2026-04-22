@@ -7250,8 +7250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4042e50c1462d4a89381417323c5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockManager
-  white: {fileID: 1435685329}
-  black: {fileID: 652413264}
+  white: {fileID: 652413264}
+  black: {fileID: 1435685329}
   iswhite: 0
   animator: {fileID: 1098633178}
 --- !u!1 &652413264
@@ -8178,6 +8178,7 @@ GameObject:
   - component: {fileID: 691518430}
   - component: {fileID: 691518429}
   - component: {fileID: 691518428}
+  - component: {fileID: 691518432}
   m_Layer: 0
   m_Name: FlyEnemy
   m_TagString: Reset
@@ -8320,6 +8321,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &691518432
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691518427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d16adb8b1eceec14c853b84f2ceb0fb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &713342897
 GameObject:
   m_ObjectHideFlags: 0
@@ -8332,6 +8355,7 @@ GameObject:
   - component: {fileID: 713342900}
   - component: {fileID: 713342899}
   - component: {fileID: 713342898}
+  - component: {fileID: 713342902}
   m_Layer: 0
   m_Name: FlyEnemy (1)
   m_TagString: Reset
@@ -8474,6 +8498,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &713342902
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713342897}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d16adb8b1eceec14c853b84f2ceb0fb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &870340684
 GameObject:
   m_ObjectHideFlags: 0
@@ -10658,6 +10704,7 @@ GameObject:
   - component: {fileID: 1224772817}
   - component: {fileID: 1224772816}
   - component: {fileID: 1224772815}
+  - component: {fileID: 1224772819}
   m_Layer: 0
   m_Name: FlyEnemy (3)
   m_TagString: Reset
@@ -10800,6 +10847,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1224772819
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224772814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d16adb8b1eceec14c853b84f2ceb0fb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1275677003
 GameObject:
   m_ObjectHideFlags: 0
@@ -15245,6 +15314,7 @@ GameObject:
   - component: {fileID: 2086529196}
   - component: {fileID: 2086529195}
   - component: {fileID: 2086529194}
+  - component: {fileID: 2086529198}
   m_Layer: 0
   m_Name: FlyEnemy (2)
   m_TagString: Reset
@@ -15387,6 +15457,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2086529198
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086529193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d16adb8b1eceec14c853b84f2ceb0fb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2115323392
 GameObject:
   m_ObjectHideFlags: 0
