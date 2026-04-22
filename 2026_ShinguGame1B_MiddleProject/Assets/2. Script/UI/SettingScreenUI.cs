@@ -29,6 +29,7 @@ public class SettingScreenUI : MonoBehaviour
         settingScreen.gameObject.SetActive(true);           //창 열림
 
         settingScreen.rectTransform.DOScale(1, 0.2f);       // 스케일 늘림
+
     }
 
     /// <summary>

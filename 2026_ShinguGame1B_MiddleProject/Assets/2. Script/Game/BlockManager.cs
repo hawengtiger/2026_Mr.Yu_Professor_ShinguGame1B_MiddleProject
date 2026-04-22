@@ -16,8 +16,10 @@ public class BlockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            SoundManager.Instance.PlaySFX("Change");
+
             iswhite = !iswhite;
 
             animator.SetBool("iswhite", iswhite);

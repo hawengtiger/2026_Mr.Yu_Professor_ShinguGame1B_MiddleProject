@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/1. Scenes/Lv2.unity
     guid: 630076ccaf68a1f4ea4af94e7f595d48
   - enabled: 1
+    path: Assets/1. Scenes/Lv3.unity
+    guid: a850abbe6f43407448babcf280cf2107
+  - enabled: 1
+    path: Assets/1. Scenes/Lv4.unity
+    guid: f2d14570d94d1c5478084064e51036e3
+  - enabled: 1
+    path: Assets/1. Scenes/Lv5.unity
+    guid: c03b23cab0b649143973bf4a813ced27
+  - enabled: 1
+    path: Assets/1. Scenes/EndScene.unity
+    guid: 0f17f0ba29f4ec2488a4b887c426ce68
+  - enabled: 1
     path: Assets/1. Scenes/LoadingScenes.unity
     guid: ae3c4b1f6ac31524f981adffcf5c42b6
   m_configObjects:

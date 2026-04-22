@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Flag
   - Reset
+  - Speed
+  - Boundary
+  - Enemy
+  - Item
+  - Obstacle
   layers:
   - Default
   - TransparentFX

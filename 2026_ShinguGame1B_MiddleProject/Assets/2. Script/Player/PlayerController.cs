@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
+    public float itemSpeed = 4f;
+
+    public bool item = false;
 
     /// <summary>
     /// | private º¯¼ö | =====================
@@ -64,11 +67,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (item) return;
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Reset"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (collision.CompareTag("Speed"))
+        {
+            moveSpeed = itemSpeed;
+            SoundManager.Instance.PlaySFX("Item");
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Item"))
+        {
+            item = true;
+            SoundManager.Instance.PlaySFX("Item");
+            Destroy(collision.gameObject);
+
         }
 
         if (collision.CompareTag("Flag"))
